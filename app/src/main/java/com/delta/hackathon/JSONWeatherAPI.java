@@ -11,8 +11,9 @@ public interface JSONWeatherAPI {
     @GET("weather")
     Call<FinalData> getUsingCoord(@Query("lat") double lat,
                                   @Query("lon") double lon,
-                                  @Query("appid") String appid);
+                                  @Query("appid") String appid,
+                                  @Query("units") String units);
 
     @GET("weather")
-    Call<FinalData> getUsingLocation(@Query("q") String q, @Query("appid") String appid);
+    Call<FinalData> getUsingLocation(@Query("q") String q, @Query("appid") String appid, @Query("units") String units);
 }

@@ -8,6 +8,17 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="background">#704FC9</color>
+    <color name="backgroundLight">#704FC9</color>
+    <color name="backgroundDark">#3B3B3B</color>
     <color name="divider">#696969</color>
+
+    <color name="startColorLight">#8C6EDE</color>
+    <color name="centerColorLight">#967DCF</color>
+    <color name="endColorLight">#896DDF</color>
+
+    <color name="startColorDark">#474545</color>
+    <color name="centerColorDark">#454347</color>
+    <color name="endColorDark">#565556</color>
+
+    <color name="textColorDark">#C5C2C2</color>
 </resources>
