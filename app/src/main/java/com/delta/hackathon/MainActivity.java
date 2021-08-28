@@ -24,6 +24,7 @@ import com.google.android.gms.location.LocationCallback;
 import com.google.android.gms.location.LocationRequest;
 import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
@@ -279,9 +280,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(MainActivity.this);
     }
 
-    private void moveCamera(LatLng latLng, float zoom)
-    {
-
+    private void moveCamera(LatLng latLng, float zoom) {
+        Log.d(TAG, "moveCamera: Called");
+        maps.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, zoom));
     }
 
     @Override
@@ -292,6 +293,15 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         maps = googleMap;
 
         getLocation();
+
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED
+                && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+            return;
+        }
+        maps.setMyLocationEnabled(true);
+        maps.getUiSettings().setMyLocationButtonEnabled(false);
     }
 
     @Override
