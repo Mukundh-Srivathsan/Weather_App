@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private static final String TAG = "MainActivity";
 
     private static final String URL = "https://api.openweathermap.org/data/2.5/";
-    private static final String API_KEY = "7adf93605d2758b57f8a318084e5909f";
+    private static final String API_KEY = "<API_KEY>";
     private static final String IMG_URL = "http://openweathermap.org/img/w/";
     private static final String METRIC = "metric";
     private static final int ERROR_DIALOG = 9001;
