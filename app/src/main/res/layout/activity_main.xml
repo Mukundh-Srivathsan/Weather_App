@@ -17,21 +17,40 @@
             android:layout_width="180dp"
             android:layout_height="match_parent"
             android:layout_gravity="center|left"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="15dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_background">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/basic"
+                android:text="Currently"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="75dp"
-                android:fontFamily="@font/allerta"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/basic"
                 android:gravity="center"
-                android:text="Moderate Rain"
-                android:textSize="27sp" />
+                android:text="Moderate rain"
+                android:textSize="35sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="@font/basic"
+                android:text="Wind"
+                android:textSize="15sp" />
 
             <TextView
                 android:id="@+id/wind"
@@ -39,9 +58,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="25dp"
-                android:fontFamily="@font/allerta"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/basic"
                 android:text="3 km/h"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/basic"
+                android:text="Humidity"
                 android:textSize="15sp" />
 
             <TextView
@@ -50,9 +79,19 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="100dp"
-                android:fontFamily="@font/allerta"
+                android:layout_marginTop="55dp"
+                android:fontFamily="@font/basic"
                 android:text="92%"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="100dp"
+                android:fontFamily="@font/basic"
+                android:text="Pressure"
                 android:textSize="15sp" />
 
             <TextView
@@ -61,61 +100,24 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="175dp"
-                android:fontFamily="@font/allerta"
+                android:layout_marginTop="130dp"
+                android:fontFamily="@font/basic"
                 android:text="998hPa"
-                android:textSize="15sp" />
+                android:textSize="17sp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/allerta"
-                android:text="Currently"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="@font/allerta"
-                android:text="Wind"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="75dp"
-                android:fontFamily="@font/allerta"
-                android:text="Humidity"
-                android:textSize="13sp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="150dp"
-                android:fontFamily="@font/allerta"
-                android:text="Pressure"
-                android:textSize="13sp" />
 
             <View
                 android:layout_width="125dp"
                 android:layout_height="2dp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="175dp"
+                android:layout_marginTop="155dp"
                 android:background="@drawable/rounded_divider" />
 
             <View
                 android:layout_width="125dp"
                 android:layout_height="2dp"
                 android:layout_gravity="bottom|center"
-                android:layout_marginBottom="30dp"
+                android:layout_marginBottom="70dp"
                 android:background="@drawable/rounded_divider" />
 
         </FrameLayout>
@@ -126,7 +128,7 @@
             android:layout_height="230dp"
             android:layout_gravity="top|right"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_background">
 
@@ -136,7 +138,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="7°C"
                 android:textSize="35sp" />
 
@@ -147,7 +149,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="60dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="7°C / 8°C"
                 android:textSize="15sp" />
 
@@ -156,9 +158,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="Temp"
-                android:textSize="13sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -166,9 +168,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="Min/Max"
-                android:textSize="13sp" />
+                android:textSize="15sp" />
 
             <View
                 android:layout_width="140dp"
@@ -192,18 +194,19 @@
             android:layout_height="230dp"
             android:layout_gravity="bottom|right"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
             android:background="@drawable/rounded_background">
+
             <TextView
                 android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="Earlham"
-                android:textSize="25sp" />
+                android:textSize="30sp" />
 
             <TextView
                 android:id="@+id/latLon"
@@ -212,7 +215,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="60dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="41  /  -94"
                 android:textSize="15sp" />
 
@@ -221,9 +224,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="Location"
-                android:textSize="13sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -231,9 +234,9 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="20dp"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/allerta"
+                android:fontFamily="@font/basic"
                 android:text="Lat/Lon"
-                android:textSize="13sp" />
+                android:textSize="15sp" />
 
             <View
                 android:layout_width="140dp"

@@ -9,8 +9,8 @@ import retrofit2.http.Query;
 public interface JSONWeatherAPI {
 
     @GET("weather")
-    Call<FinalData> getUsingCoord(@Query("lat") String lat,
-                                  @Query("lon") String lon,
+    Call<FinalData> getUsingCoord(@Query("lat") double lat,
+                                  @Query("lon") double lon,
                                   @Query("appid") String appid);
 
     @GET("weather")
